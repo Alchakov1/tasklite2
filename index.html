@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru" class="theme-habits">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>TaskLite - РџСЂРёРІС‹С‡РєРё</title>
+             <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <div class="container header_container">
+    <div class="header_title">TaskLite</div>
+ 
+    <nav class="tabs">
+    <a href="index.html" class="tab">To Do</a>
+    <a href="kanban.html" class="tab">Канбан</a>
+    <a href="habits.html" class="tab active">РџСЂРёРІС‹С‡РєРё</a>
+    </nav>
+   </div>
+</header>
+    <main class="container">
+        <h1 class="page-title">РўСЂРµРєРµСЂ РїСЂРёРІС‹С‡РµРє</h1>
+        <div class="habits-board">
+        <div class="habit">
+        <div class="habit_header">
+        <div class="habit_color-tag"></div>
+        <div class="habit_info">
+        <div class="habit_name">РЈС‚СЂРµРЅРЅСЏСЏ Р·Р°СЂСЏРґРєР°</div>
+        <div class="habit_meta">
+            <span class="habit_category">Р—РґРѕСЂРѕРІСЊРµ</span>
+            <span class="habit_streak">РЎРµСЂРёСЏ: 3 / 20 РґРЅРµР№</span>
+        </div>
+    </div>
+ </div>
+ <button class="habit_delete" title="РЈРґР°Р»РёС‚СЊ РїСЂРёРІС‹С‡РєСѓ">*</button>
+    <div class="habit_tracker">
+        <button class="day">РџРЅ</button>
+        <button class="day">done</button>
+        <button class="day">done</button>
+        <button class="day">Р§С‚</button>
+        <button class="day">РџС‚</button>
+        <button class="day">РЎР±</button>
+        <button class="day">Р’СЃ</button>
+ </div>
+    <button class="add-habit">Р”РѕР±Р°РІРёС‚СЊ РїСЂРёРІС‹С‡РєСѓ</button>
+    </div>
+ </div>
+ <section class="habit-form">
+    <h2 class="habit-form_title">РќРѕРІР°СЏ РїСЂРёРІС‹С‡РєР°</h2>
+        <div class="habit-form_row">
+            <button type="button" class="habit-add-btn">РЎРѕС…СЂР°РЅРёС‚СЊ РїСЂРёРІС‹С‡РєСѓ</button>
+            <button type="button" class="habit-cancel-btn">РћС‚РјРµРЅР°</button>
+                <div class="habit-form_row colors">
+                    <div class="color-option">
+                    <button class="color-tag color-health active" data-color="color-health"></button>
+                    <span class="color-label">Р—РґРѕСЂРѕРІСЊРµ Рё С‚РµР»Рѕ</span>
+                        <div class="color-option">
+                        <button class="color-tag color-study" data-color="color-study"></button>
+                        <span class="color-label">РЈС‡С‘Р±Р° Рё СЂР°Р·РІРёС‚РёРµ</span>
+                    </div>
+<div class="color-option">
+    <button class="color-tag color-emotion" data-color="color-emotion"></button>
+        <span class="color-label">РРјРѕС†РёРѕРЅР°Р»СЊРЅРѕРµ СЃРѕСЃС‚РѕСЏРЅРёРµ</span>
+ </div>
+    <div class="color-option">
+        <button class="color-tag color-home" data-color="color-home"></button>
+        <span class="color-label">Р”РѕРј Рё Р±С‹С‚</span>
+ </div>
+    <div class="color-option">
+        <button class="color-tag color-work" data-color="color-work"></button>
+    <span class="color-label">Р Р°Р±РѕС‚Р° Рё С„РёРЅР°РЅСЃС‹</span>
+ </div>
+    <div class="color-option">
+        <button class="color-tag color-social" data-color="color-social"></button>
+        <span class="color-label">РЎРѕС†РёР°Р»СЊРЅС‹Рµ РїСЂРёРІС‹С‡РєРё</span>
+        </div>
+    </div>
+ </div>
+<input type="text" class="habit-input" placeholder="РќР°Р·РІР°РЅРёРµ РїСЂРёРІС‹С‡РєРё">
+    <select class="habit-select">
+    <option value="daily">РљР°Р¶РґС‹Р№ РґРµРЅСЊ</option>
+    <option value="weekdays">Р‘СѓРґРЅРё</option>
+ </select>
+    <div class="habit-custom-days">
+        <label class="habit-custom-days_title">Р’С‹Р±РµСЂРёС‚Рµ РґРЅРё РЅРµРґРµР»Рё</label>
+            <div class="habit-custom-days_list">
+                <button class="weekday-btn" data-day="0">РџРЅ</button>
+                <button class="weekday-btn" data-day="1">Р’С‚</button>
+                <button class="weekday-btn" data-day="2">РЎСЂ</button>
+                <button class="weekday-btn" data-day="3">Р§С‚</button>
+                <button class="weekday-btn" data-day="4">РџС‚</button>
+                <button class="weekday-btn" data-day="5">РЎР±</button>
+            <button class="weekday-btn" data-day="6">Р’СЃ</button>
+ </div>
+        <input type="number" min="1" class="habit-input habit-goal" placeholder="Р¦РµР»СЊ (РІ РґРЅСЏС…)">
+
+                    </div>
+                </div> 
+        </section>
+    </main>
+</body>
+</html>
